@@ -10,6 +10,7 @@ describe "Static pages" do
     before { visit root_path }
 
     it { should have_content('Pre Wake') }
+    it { should have_content('A pre Wake app where friends can post what they will miss about you before you "kick the bucket".') }
     it { should have_title(full_title("")) }
   end
   describe "About page" do
