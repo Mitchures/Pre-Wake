@@ -30,5 +30,9 @@ describe "Static pages" do
       visit '/static_pages/contact'
       expect(page).to have_content('Contact')
     end
+    it "should have the right title" do
+      visit '/static_pages/contact'
+      expect(page).to have_title("Pre Wake | Contact")
+    end
   end
 end
