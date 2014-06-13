@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe "Static pages" do
 
+  let(:base_title) { "Pre Wake" }
+
   describe "Home page" do
 
     it "should have the content 'Pre Wake'" do
@@ -10,8 +12,11 @@ describe "Static pages" do
     end
     it "should have the right title" do
       visit '/static_pages/home'
-      expect(page).to have_title("Pre Wake | Home")
+      expect(page).to have_title("#{base_title}")
     end
+    it "should not have a custom page title" do
+      visit '/static_pages/home'
+      expect(page).not_to have_title('| Home')
   end
   describe "About page" do
 
@@ -21,7 +26,7 @@ describe "Static pages" do
     end
     it "should have the right title" do
       visit '/static_pages/about'
-      expect(page).to have_title("Pre Wake | About")
+      expect(page).to have_title("#{base_title} | About")
     end
   end
   describe "Contact page" do
@@ -32,7 +37,7 @@ describe "Static pages" do
     end
     it "should have the right title" do
       visit '/static_pages/contact'
-      expect(page).to have_title("Pre Wake | Contact")
+      expect(page).to have_title("#{base_title} | Contact")
     end
   end
 end
