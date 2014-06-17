@@ -90,7 +90,7 @@ body {
   font-family: 'Lato-Light';
   padding-top: 60px;
   // background: linear-gradient(rgba(255,255,255,0.4) 100%,rgba(255,255,255,0.4) 100%,rgba(255,255,255,0.4) 100%), url('/assets/headstone.jpg') no-repeat;
-  background-image: url('/assets/headstone.jpg') !important;
+  background: image-url('headstone.jpg') !important;
   background-size: 100% !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
