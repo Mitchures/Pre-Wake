@@ -23,6 +23,10 @@ $lightGray: #999;
 
 /* GLOBAL */
 
+.row{
+  margin-top: 30px;
+}
+
 html {
   overflow-y: scroll;
 }
@@ -31,12 +35,22 @@ html {
 body {
   font-family: 'Lato-Light';
   padding-top: 60px;
+  // background: linear-gradient(rgba(255,255,255,0.4) 100%,rgba(255,255,255,0.4) 100%,rgba(255,255,255,0.4) 100%), url('/assets/headstone.jpg') no-repeat;
+  background-image: url('/assets/headstone.jpg') !important;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 .btn{
-  background: linear-gradient(#00A9E0, #008CBA) !important;
+  background: #00A9E0;
   border: 0px solid transparent;
-  border-radius: 0px;
+  border-radius: 5px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+  color: white;
+  background-color: #0192C0;
 }
 
 section {
@@ -67,6 +81,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  margin-top: 30px;
 }
 
 h1 {
@@ -109,14 +124,14 @@ p {
 }
 
 .hero-unit {
-  padding: 100px;
+  padding: 40px;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: rgba(255, 255, 255, 0.8);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -127,16 +142,18 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: $lightGray;
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
   a {
-    color: #555;
+    color: #fff;
     &:hover{
-      color: #222;
+      text-decoration: none;
+      color: #00A9E0;
     }
   }
   small {
-    float: left;
+    float: middle !important;
+    color: white;
+    text-shadow: 0px 0px 10px black;
   }
   ul {
     float: right;
@@ -156,6 +173,30 @@ footer {
   width: 100%;
   margin-top: 45px;
   @include box_sizing;
+}
+
+.alert-danger, .alert-error {
+  background: #F92773;
+  border-color: transparent;
+  border-radius: 0px;
+  color: white;
+  margin-top: 30px;
+}
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.0);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.alert-success {
+  background-color: #97CF2A;
+  border-color: transparent;
+  margin-top: 30px;
+  color: #fff;
 }
 
 /* sidebar */
