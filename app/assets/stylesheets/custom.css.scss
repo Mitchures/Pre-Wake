@@ -1,5 +1,59 @@
 @import 'bootstrap';
 
+
+/*-- ANIMATIONS CSS START --*/
+.animated.fadeIn{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+}
+.img.animated.fadeIn{
+  -webkit-animation-duration: .6s;
+  -webkit-animation-delay: .2s;
+}
+.animated.fadeOut{
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: 0s;
+}
+
+.animated.slideInDown{
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: 0s;
+  -webkit-overflow: hidden;
+}
+.animated.rotateInDownRight{
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: 0s;
+  -webkit-overflow: hidden;
+}
+.animated.rotateIn{
+  -webkit-animation-duration: 1.0s;
+  -webkit-animation-delay: 0s;
+  -webkit-overflow: hidden;
+}
+.animated.fadeInDown{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+  -webkit-overflow: hidden;
+}
+.img.animated.fadeInDown{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .3s;
+  -webkit-overflow: hidden;
+}
+.animated.fadeInUp{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+  -webkit-overflow: hidden;
+}
+.img.animated.fadeInUp{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -webkit-overflow: hidden;
+}
+
+
+
+
 /* mixins, variables, etc. */
 
 @font-face {
