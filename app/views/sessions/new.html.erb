@@ -12,12 +12,6 @@
       <%= f.password_field :password %>
 
       <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
-      <!-- <% if current_user %>
-        Welcome <%= current_user.name %>!
-        <%= link_to "Sign Out", signout_path %>
-      <% else %>
-        <%= link_to "Sign in with Twitter", "/auth/twitter" %>
-      <% end %> -->
     <% end %>
 
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
