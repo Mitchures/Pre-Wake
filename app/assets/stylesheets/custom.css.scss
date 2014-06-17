@@ -1,7 +1,17 @@
 @import 'bootstrap';
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300);
 
 /* mixins, variables, etc. */
+
+@font-face {
+  font-family: 'Lato-Light';
+  src:font-url('Lato-Light.ttf');
+
+}
+@font-face {
+  font-family: 'Lato-Hairline';
+  src:font-url('Lato-Hairline.ttf');
+
+}
 
 $lightGray: #999;
 
@@ -19,7 +29,7 @@ html {
 
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato-Light';
   padding-top: 60px;
 }
 
