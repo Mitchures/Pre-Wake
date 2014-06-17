@@ -18,6 +18,8 @@ body {
 
 .btn{
   background: linear-gradient(#00A9E0, #008CBA) !important;
+  border: 0px solid transparent;
+  border-radius: 0px;
 }
 
 section {
@@ -33,6 +35,15 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding: 15px;
 }
 
 /* typography */
@@ -68,16 +79,30 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: #313131;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: #fff;
+    color: #008CBA;
     text-decoration: none;
   }
+}
+
+.hero-unit {
+  padding: 100px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 /* footer */
