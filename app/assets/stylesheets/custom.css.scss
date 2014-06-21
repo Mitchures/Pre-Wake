@@ -67,6 +67,7 @@
 
 }
 
+$awesomePurple: #6600ff;
 $lightGray: #999;
 
 @mixin box_sizing {
@@ -81,6 +82,11 @@ $lightGray: #999;
   margin-top: 30px;
 }
 
+.gravatar{
+  border-radius: 100px;
+  border: 1px solid #313131;
+}
+
 html {
   overflow-y: scroll;
 }
@@ -88,12 +94,13 @@ html {
 
 body {
   font-family: 'Lato-Light';
+  background-color: white;
   padding-top: 60px;
   // background: linear-gradient(rgba(255,255,255,0.4) 100%,rgba(255,255,255,0.4) 100%,rgba(255,255,255,0.4) 100%), url('/assets/headstone.jpg') no-repeat;
-  background: image-url('headstone.jpg') !important;
-  background-size: 100% !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
+  // background: image-url('headstone.jpg') !important;
+  // background-size: 100% !important;
+  // background-repeat: no-repeat !important;
+  // background-position: center !important;
 }
 
 .btn{
@@ -105,6 +112,24 @@ body {
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
   color: white;
   background-color: #0192C0;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+  background-color: transparent;
+  color: #00A9E0;
+  text-decoration: none;
+  border-bottom: 3px solid #00A9E0;
+}
+.navbar .nav > li > a:focus, .navbar .nav > li > a {
+  background-color: transparent;
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+a{
+  outline:0px !important;
+  -webkit-appearance:none;
 }
 
 section {
@@ -196,9 +221,10 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  // border-top: 2px solid rgba(255, 255, 255, 0.8);
+  border-top: 1px solid lightgrey;
   a {
-    color: #fff;
+    color: #313131;
     &:hover{
       text-decoration: none;
       color: #00A9E0;
@@ -206,8 +232,8 @@ footer {
   }
   small {
     float: middle !important;
-    color: white;
-    text-shadow: 0px 0px 10px black;
+    color: #313131;
+    // text-shadow: 0px 0px 10px black;
   }
   ul {
     float: right;
@@ -307,4 +333,19 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
 }
