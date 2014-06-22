@@ -35,6 +35,31 @@
   -webkit-animation-delay: .5s;
   -webkit-overflow: hidden;
 }
+.animated.fadeInDown.one{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .6s;
+  -webkit-overflow: hidden;
+}
+.animated.fadeInDown.two{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .7s;
+  -webkit-overflow: hidden;
+}
+.animated.fadeInDown.three{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .8s;
+  -webkit-overflow: hidden;
+}
+.animated.fadeInDown.four{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .9s;
+  -webkit-overflow: hidden;
+}
+.animated.fadeInDown.five{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .10s;
+  -webkit-overflow: hidden;
+}
 .img.animated.fadeInDown{
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: .3s;
@@ -85,6 +110,15 @@ $lightGray: #999;
 .gravatar{
   border-radius: 100px;
   border: 1px solid #313131;
+  float: left;
+  margin-right: 10px;
+}
+
+
+
+section {
+  overflow: auto;
+  width: 500px;
 }
 
 html {
@@ -116,16 +150,37 @@ body {
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: #00A9E0;
+  color: #313131;
   text-decoration: none;
-  border-bottom: 3px solid #00A9E0;
+  border-bottom: 3px solid #313131;
 }
 .navbar .nav > li > a:focus, .navbar .nav > li > a {
   background-color: transparent;
-  color: #333333;
+  color: white;
   text-decoration: none;
   border-bottom: 3px solid transparent;
+  -webkit-transition: all .3s;
 }
+
+.navbar-inner{
+  background-image: linear-gradient(to bottom, #00A1E9, #00a9e0);
+}
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0 0 transparent;
+
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: transparent;
+  color: lightgrey;
+}
+
+
 
 a{
   outline:0px !important;
@@ -190,15 +245,16 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #313131;
+  color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: #008CBA;
+    color: #313131;
     text-decoration: none;
+    -webkit-transition: all .3s ease;
   }
 }
 
