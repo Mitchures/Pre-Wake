@@ -11,7 +11,7 @@ describe "Static pages" do
 
     it { should have_content('Pre Wake') }
     it { should have_content('A pre Wake app where friends can post what they will miss about you before you "kick the bucket".') }
-    it { should have_title(full_title('Pre Wake')) }
+    it { should have_title(full_title('')) }
 
     describe "for signed-in users" do
       let(:user) { FactoryGirl.create(:user) }
