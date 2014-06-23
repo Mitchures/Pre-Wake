@@ -240,6 +240,7 @@ DEPENDENCIES
   fog (~> 1.22.1)
   jbuilder (~> 2.0)
   jquery-rails
+  omniauth (~> 1.2.1)
   omniauth-twitter (~> 1.0.1)
   pg
   rails (= 4.1.1)

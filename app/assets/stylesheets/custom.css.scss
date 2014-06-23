@@ -107,11 +107,32 @@ $lightGray: #999;
   margin-top: 30px;
 }
 
+
+
 .gravatar{
   border-radius: 100px;
   border: 1px solid #313131;
   float: left;
   margin-right: 10px;
+}
+
+.microposts{
+  .gravatar{
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+.users{
+  .gravatar{
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+
+.span8{
+  width: 400px;
+  float: right !important;
 }
 
 
@@ -164,6 +185,8 @@ body {
 
 .navbar-inner{
   background-image: linear-gradient(to bottom, #00A1E9, #00a9e0);
+  border: 0px solid #313131 !important;
+  border-bottom: 1px solid #313131 !important;
 }
 
 .navbar .nav > li > a {
@@ -208,19 +231,21 @@ textarea {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  padding: 15px;
+  padding-top: 15px;
 }
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-  margin-top: 30px;
+}
+
+h3{
 }
 
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
+  margin-top: 10px !important;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -437,9 +462,15 @@ input {
 
 /* microposts */
 
+.microposts-title{
+  text-align: right !important;
+}
+
 .microposts {
   list-style: none;
   margin: 10px 0 0 0;
+  width: 400px !important;
+  float: right !important;
 
   li {
     padding: 10px 0;
