@@ -3,7 +3,7 @@
   <aside class="span4">
     <section>
       <%= gravatar_for @user %>
-      <h1><%= @user.name %></h1>
+      <h1 class='animation fadeInRight'><%= @user.name %></h1>
       <span><%= link_to "view my profile", @user %></span>
       <span><b>Microposts:</b> <%= @user.microposts.count %></span>
     </section>
@@ -19,7 +19,7 @@
     </section>
   </aside>
   <div class="span8">
-    <h3><%= @title %></h3>
+    <h3 animation fadeInRight><%= @title %></h3>
     <% if @users.any? %>
       <ul class="users">
         <%= render @users %>

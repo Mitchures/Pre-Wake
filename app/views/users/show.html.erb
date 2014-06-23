@@ -2,7 +2,7 @@
 <div class="row">
   <aside class="span4">
     <section>
-      <h1>
+      <h1 class='animation fadeInRight'>
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
@@ -14,7 +14,7 @@
   <div class="span8 microposts">
     <%= render 'follow_form' if signed_in? %>
     <% if @user.microposts.any? %>
-      <h3 class='microposts-title'>Microposts (<%= @user.microposts.count %>)</h3>
+      <h3 class='microposts-title animation fadeInRight'>Microposts (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">
         <%= render @microposts %>
       </ol>

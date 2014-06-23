@@ -30,6 +30,16 @@
   -webkit-animation-delay: 0s;
   -webkit-overflow: hidden;
 }
+.animated.fadeInRight{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+  -webkit-overflow: hidden;
+}
+.animated.fadeInleft{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+  -webkit-overflow: hidden;
+}
 .animated.fadeInDown{
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: .5s;
@@ -129,6 +139,12 @@ $lightGray: #999;
     height: 100px !important;
   }
 }
+.user_avatars{
+  .gravatar{
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
 
 .span8{
   width: 400px;
@@ -171,19 +187,29 @@ body {
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: #313131;
+  color: white;
   text-decoration: none;
-  border-bottom: 3px solid #313131;
+  // border-bottom: 3px solid #313131;
+  text-shadow: 0px 15px 20px black;
+}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:active {
+  background-color: transparent;
+  color: grey;
+  text-decoration: none;
+  // border-bottom: 3px solid #313131;
+  text-shadow: 0px 10px 15px black;
 }
 .navbar .nav > li > a:focus, .navbar .nav > li > a {
   background-color: transparent;
   color: white;
   text-decoration: none;
-  border-bottom: 3px solid transparent;
+  // border-bottom: 3px solid transparent;
   -webkit-transition: all .3s;
+  text-shadow: 0px 4px 10px black;
 }
 
 .navbar-inner{
+  // background-image: linear-gradient(to bottom, #7700ff, #6600ff);
   background-image: linear-gradient(to bottom, #00A1E9, #00a9e0);
   border: 0px solid #313131 !important;
   border-bottom: 1px solid #313131 !important;
@@ -195,6 +221,7 @@ body {
   color: white;
   text-decoration: none;
   text-shadow: 0 0 0 transparent;
+  text-shadow: 0px 4px 10px black;
 
 }
 
@@ -231,7 +258,7 @@ textarea {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  padding-top: 15px;
+  padding: 10px;
 }
 
 /* typography */
@@ -276,11 +303,13 @@ p {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+  -webkit-transition: all .3s ease;
   &:hover {
     color: #313131;
     text-decoration: none;
     -webkit-transition: all .3s ease;
   }
+
 }
 
 .hero-unit {
