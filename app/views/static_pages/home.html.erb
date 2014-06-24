@@ -12,19 +12,19 @@
       </section>
     </aside>
     <div class="span8">
-      <h3 class='animation fadeInRight'>Micropost Feed</h3>
+      <h3 class='animated fadeInRight'>Micropost Feed</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
 <% else %>
   <div class="center hero-unit animated fadeIn">
-    <h1 class='animation fadeInLeft'>Welcome to Pre Wake</h1>
+    <h1 class='animated fadeInLeft'>Welcome to Pre Wake</h1>
 
-    <h2 class='animation fadeInRight'>
+    <h2 class='animated fadeInRight'>
       A pre Wake app where friends can post what they will miss about you before you "kick the bucket".
     </h2>
 
-    <%= link_to "Sign In", signin_path, class: "btn btn-large btn-primary animation fadeInLeft" %>
-    <%= link_to "Sign Up", signup_path, class: "btn btn-large btn-primary animation fadeInRight" %>
+    <%= link_to "Sign In", signin_path, class: "btn btn-large btn-primary animated fadeInLeft" %>
+    <%= link_to "Sign Up", signup_path, class: "btn btn-large btn-primary animated fadeInRight" %>
   </div>
 <% end %>

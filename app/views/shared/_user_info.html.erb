@@ -1,11 +1,11 @@
 
 <%= link_to gravatar_for(current_user), current_user %>
-<h1>
+<h1 class='animated fadeInDown'>
   <%= current_user.name %>
 </h1>
-<span>
+<span class='animated fadeInLeft'>
   <%= link_to "view my profile", current_user %>
 </span>
-<span>
+<span class='animated fadeInUp'>
   <%= pluralize(current_user.microposts.count, "micropost") %>
 </span>
