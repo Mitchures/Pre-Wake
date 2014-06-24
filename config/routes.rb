@@ -10,7 +10,7 @@ resources :relationships, only: [:create, :destroy]
 root  'static_pages#home'
 match '/signup',  to: 'users#new', via: 'get'
 match '/signin',  to: 'sessions#new', via: 'get'
-# match "/auth/twitter/callback", to: "sessions#create", via: 'get'
+# match "/auth/:provider/callback", to: => "sessions#create"
 match '/signout', to: 'sessions#destroy', via: 'delete'
 match '/about', to: 'static_pages#about', via: 'get'
 match '/contact', to: 'static_pages#contact', via: 'get'

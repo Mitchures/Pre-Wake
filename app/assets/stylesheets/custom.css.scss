@@ -35,7 +35,7 @@
   -webkit-animation-delay: .5s;
   -webkit-overflow: hidden;
 }
-.animated.fadeInleft{
+.animated.fadeInLeft{
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: .5s;
   -webkit-overflow: hidden;
@@ -115,6 +115,21 @@ $lightGray: #999;
 
 .row{
   margin-top: 30px;
+}
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 5px !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  height: 30px;
+  line-height: 40px;
 }
 
 

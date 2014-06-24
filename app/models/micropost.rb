@@ -3,6 +3,7 @@ class Micropost < ActiveRecord::Base
   default_scope -> { order('created_at DESC') }
   validates :content, presence: true, length: { maximum: 140 }
   validates :user_id, presence: true
+  mount_uploader :image, ImageUploader
 
   def self.from_users_followed_by(user)
     followed_user_ids = "SELECT followed_id FROM relationships

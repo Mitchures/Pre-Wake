@@ -12,8 +12,9 @@ class User < ActiveRecord::Base
                                    class_name:  "Relationship",
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
-
   
+
+
 
   def feed
     Micropost.from_users_followed_by(self)
