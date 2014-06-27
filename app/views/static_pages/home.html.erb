@@ -7,21 +7,19 @@
       <section>
         <%= render 'shared/stats' %>
       </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
-      </section>
+
     </aside>
     <div class="span8">
-      <h3 class='animated fadeInRight'>Micropost Feed</h3>
+      <h3 class='animated fadeInRight'>My Posts</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
 <% else %>
   <div class="center hero-unit animated fadeIn">
-    <h1 class='animated fadeInLeft'>Welcome to Pre Wake</h1>
+    <h1 class='main-title animated fadeInUp'>Welcome to Pre Wake</h1>
 
-    <h2 class='animated fadeInRight'>
-      A pre Wake app where friends can post what they will miss about you before you "kick the bucket".
+    <h2 class='animated fadeInUp'>
+      Post what you will miss about them before they "kick the bucket".
     </h2>
 
     <%= link_to "Sign In", signin_path, class: "btn btn-large btn-primary animated fadeInLeft" %>

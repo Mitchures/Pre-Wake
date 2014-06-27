@@ -1,5 +1,8 @@
 <% provide(:title, @user.name) %>
 <div class="row">
+  <!-- <h1 class='question'>
+    <%= 'What would you miss about this person if they were to kick the bucket?' %>
+  </h1> -->
   <aside class="span4">
     <section>
       <h1 class='animated fadeInLeft'>
@@ -10,12 +13,21 @@
     <section>
       <%= render 'shared/stats' %>
     </section>
+    <section>
+      <% if current_user %>
+        <%= render 'shared/micropost_form' if current_user.id != @user.id %>
+      <% end %>
+    </section>
   </aside>
   <div class="span8 microposts">
+
     <%= render 'follow_form' if signed_in? %>
+
+
     <% if @user.microposts.any? %>
-      <h3 class='microposts-title animated fadeInRight'>Microposts (<%= @user.microposts.count %>)</h3>
+      <h3 class='microposts-title animated fadeInRight'>Posts (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">
+
         <%= render @microposts %>
       </ol>
       <%= will_paginate @microposts %>

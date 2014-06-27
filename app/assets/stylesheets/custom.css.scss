@@ -182,10 +182,10 @@ body {
   font-family: 'Lato-Light';
   background-color: white;
   padding-top: 60px;
-  // background: linear-gradient(rgba(255,255,255,0.4) 100%,rgba(255,255,255,0.4) 100%,rgba(255,255,255,0.4) 100%), url('/assets/headstone.jpg') no-repeat;
-  // background: image-url('headstone.jpg') !important;
-  // background-size: 100% !important;
-  // background-repeat: no-repeat !important;
+  // background: linear-gradient(rgba(255,255,255,0.8) 100%,rgba(255,255,255,0.8) 100%,rgba(255,255,255,0.8) 100%), url('/assets/bg-custom.png.jpg') no-repeat;
+  background: image-url('bg-custom.png') !important;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
   // background-position: center !important;
 }
 
@@ -198,6 +198,7 @@ body {
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
   color: white;
   background-color: #0192C0;
+
 }
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
@@ -226,17 +227,19 @@ body {
 .navbar-inner{
   // background-image: linear-gradient(to bottom, #7700ff, #6600ff);
   background-image: linear-gradient(to bottom, #00A1E9, #00a9e0);
+  // background: transparent !important;
   border: 0px solid #313131 !important;
-  border-bottom: 1px solid #313131 !important;
+  border-bottom: 1px solid lightgrey !important;
 }
 
 .navbar .nav > li > a {
+  font-size: 25px !important;
   float: none;
   padding: 10px 15px 10px;
   color: white;
   text-decoration: none;
   text-shadow: 0 0 0 transparent;
-  text-shadow: 0px 4px 10px black;
+  // text-shadow: 0px 4px 10px black;
 
 }
 
@@ -268,17 +271,20 @@ textarea {
 }
 
 .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+  font-family: 'Lato-Hairline';
+
   padding-left: 0;
   padding-right: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  padding: 10px;
+  padding: 15px;
 }
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato-Hairline';
 }
 
 h3{
@@ -287,7 +293,7 @@ h3{
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
-  margin-top: 10px !important;
+  margin-top: 20px !important;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -320,8 +326,9 @@ p {
   line-height: 1;
   -webkit-transition: all .3s ease;
   &:hover {
-    color: #313131;
+    color: white;
     text-decoration: none;
+    text-shadow: 0px 15px 20px black;
     -webkit-transition: all .3s ease;
   }
 
@@ -335,16 +342,21 @@ p {
   font-weight: 200;
   line-height: 30px;
   color: inherit;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.0);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+}
+
+.main-title{
+  font-family: 'Lato-Hairline';
 }
 
 /* footer */
 
 footer {
   margin-top: 45px;
+  text-align: center !important;
   padding-top: 5px;
   // border-top: 2px solid rgba(255, 255, 255, 0.8);
   border-top: 1px solid lightgrey;

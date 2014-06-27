@@ -1,8 +1,9 @@
-<%= form_for @micropost, multipart: true do |f| %>
+<%= form_for Micropost.new, multipart: true do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field animated fadeInLeft">
-    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+    <%= f.text_area :content, placeholder: 'What would you miss about this person if they were to kick the bucket?...' %>
   </div>
+  <%= f.hidden_field :user_id, value: @user.id %>
   <%= f.submit "Post", class: "btn btn-large btn-primary animated fadeInUp" %>
   <%= f.file_field :image, class: 'submit-a-pic animated fadeInUp' %>
 <% end %>
